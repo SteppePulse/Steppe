@@ -6,6 +6,7 @@
   "name": "steppe",
   "scripts": {
     "build": "npm run build --workspaces --if-present",
+    "gen-deploy": "./did.sh && dfx generate && dfx deploy -y",
     "prebuild": "npm run prebuild --workspaces --if-present",
     "pretest": "npm run prebuild --workspaces --if-present",
     "start": "npm start --workspaces --if-present",
